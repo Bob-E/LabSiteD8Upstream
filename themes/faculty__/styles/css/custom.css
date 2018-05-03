@@ -34,6 +34,10 @@ body {
   background-color: #111517;
 }
 
+.page.js-layout {
+    background-color: #f7f7f7;
+}
+
 .site-branding__name {
     font-size: 2.5rem;
 }
