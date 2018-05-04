@@ -37,8 +37,8 @@
     {%- if typekit_dns_prefetch -%}
       <link rel="dns-prefetch" href="//use.typekit.net">
     {%- endif -%}
-    <!--<title>{{ head_title|safe_join(' | ') }}</title>-->
-    <title>{{ site_name }} {{ head_title }}</title>
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <!--<title>{{ site_name }}</title>-->
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
   </head>
