@@ -50,8 +50,9 @@
 
     {%- block content -%}
       <div{{ content_attributes.addClass('block__content') }}>
-        <h3>{{ site_name }}</h3>
-        {{- content -}}
+        <p>{{ site_name }} • Electrical and Computer Engineering • College of Engineering • University of California, Santa Barbara</p>
+        <p>Copyright © {{ "now"|date("Y") }} The Regents of the University of California, All Rights Reserved.</p>
+        <p><a href="http://www.policy.ucsb.edu/terms-of-use">Terms of Use</a> • <a href="http://www.policy.ucsb.edu/privacy-notification">Privacy</a> • <a href="/user/login/">User Login</a></p>
       </div>
     {%- endblock -%}
       <div class="coe">
