@@ -50,8 +50,8 @@
 
     {%- block content -%}
       <div{{ content_attributes.addClass('block__content') }}>
-        {%- if site_name or site_slogan -%}<h3>{{ site_name }}</h3>{%- endif -%}
-
+        <h3>{{ content.site_name }}</h3>
+        {{- content -}}
       </div>
     {%- endblock -%}
       <div class="coe">
