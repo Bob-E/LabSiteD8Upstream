@@ -81,8 +81,9 @@ body {
     float: right;
 }
 
-.ms-dropmenu .rm-block__content .menu-level-1 > li > span > a.is-active {
-	color: #666;
+.ms-dropmenu .rm-block__content .menu-level-1 > li > span > a.is-active,
+.ms-dropmenu .rm-block__content .menu-level-1 > li > span > a.is-active[href="/"] {
+	  color: #666;
     border-bottom: 3px solid #ffce34;
     background-color: transparent;
 }
