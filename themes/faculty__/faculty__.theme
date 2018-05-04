@@ -174,3 +174,11 @@ function faculty___preprocess_block(array &$variables) {
   $variables['site_slogan'] = $config->get('slogan');
 
 }
+
+function faculty___preprocess_page(array &$variables) {
+
+  // Load the site name out of configuration.
+  $config = \Drupal::config('system.site');
+  $variables['site_name'] = $config->get('name');
+
+}
