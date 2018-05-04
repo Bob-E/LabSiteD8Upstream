@@ -49,6 +49,7 @@
 
     {%- block content -%}
       <div{{ content_attributes.addClass('block__content') }}>
+        <h3>{{ site_name }}</h3>
         {{- content -}}
       </div>
     {%- endblock -%}
