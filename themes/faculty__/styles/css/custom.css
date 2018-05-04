@@ -71,7 +71,7 @@ body {
     margin-bottom: 30px;
 }
 
-.ms-dropmenu .rm-block__content .menu-level-1 {
+.ms-dropmenu .rm-block__content .menu-level-1 > li > span > a {
     color: #666;
     font-size: 17px;
     text-transform: uppercase;
