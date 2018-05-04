@@ -182,3 +182,11 @@ function faculty___preprocess_page(array &$variables) {
   $variables['site_name'] = $config->get('name');
 
 }
+
+function faculty___preprocess_node(array &$variables) {
+
+  // Load the site name out of configuration.
+  $config = \Drupal::config('system.site');
+  $variables['site_name'] = $config->get('name');
+
+}
