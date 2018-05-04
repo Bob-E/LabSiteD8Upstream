@@ -165,3 +165,12 @@ function faculty___preprocess_comment(&$variables) {
 function faculty___preprocess_block(&$variables) {
 }
 // */
+
+function yourtheme_preprocess_page(array &$variables) {
+
+  // Load the site name out of configuration.
+  $config = \Drupal::config('system.site');
+  $variables['site_name'] = $config->get('name');
+  $variables['site_slogan'] = $config->get('slogan');
+
+}
