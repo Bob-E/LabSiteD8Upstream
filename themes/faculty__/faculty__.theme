@@ -166,7 +166,7 @@ function faculty___preprocess_block(&$variables) {
 }
 // */
 
-function faculty___preprocess_page(array &$variables) {
+function faculty___preprocess_block(array &$variables) {
 
   // Load the site name out of configuration.
   $config = \Drupal::config('system.site');
