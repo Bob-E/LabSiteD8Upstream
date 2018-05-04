@@ -37,6 +37,7 @@
     view_mode ? 'block--view-mode-' ~ view_mode|clean_class,
   ]
 -%}
+
 {%- set heading_id = attributes.id ~ '-title'|clean_id -%}
 <div{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}{%- if label %} role="region" aria-labelledby="{{ heading_id }}"{%- endif -%}>
   <div class="block__inner">
@@ -49,7 +50,7 @@
 
     {%- block content -%}
       <div{{ content_attributes.addClass('block__content') }}>
-        <h3>{{ site_name }}</h3>
+        {%- if site_name or site_slogan -%}<h3>{{ site_name }}</h3>{%- endif -%}
         {{- content -}}
       </div>
     {%- endblock -%}
